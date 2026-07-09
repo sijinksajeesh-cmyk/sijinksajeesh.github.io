@@ -1,0 +1,273 @@
+# ============================================================
+# SIJIN K SAJEESH — Portfolio Data
+# Security Operations Analyst
+# ============================================================
+
+personal:
+  name: Sijin K Sajeesh
+  title: Security Operations Analyst
+  location: Ernakulam, Kerala, India
+  phone: "+91 6235608370"
+  email: sijinksajeesh.online@gmail.com
+  linkedin: https://www.linkedin.com/in/sijin-k-sajeesh-/
+  github: https://github.com/sijinksajeesh-cmyk
+  availability: Immediate — 24/7 rotational shifts
+  status: Available for Work
+
+summary: >
+  SOC Analyst with hands-on Tier 1 experience in SIEM-based alert monitoring,
+  incident triage, and escalation under defined runbooks and SLAs. Strong
+  foundation in cybersecurity fundamentals (CIA triad, threat lifecycle,
+  OWASP Top 10), network security (TCP/IP, DNS, firewalls), and both Windows
+  and Linux environments. Skilled in log analysis, IOC investigation, and
+  Python-based automation. Available immediately for 24/7 rotational shift
+  operations.
+
+roles:
+  - SOC Analyst
+  - Penetration Tester
+  - Security Operations Analyst
+
+certifications:
+  - name: Certified Penetration Tester
+    issuer: RedTeam Hacker Academy
+    year: 2025
+    status: Completed
+
+  - name: CompTIA CySA+ (Cybersecurity Analyst)
+    issuer: CompTIA
+    status: In Progress
+
+  - name: Cisco Networking Academy Certifications
+    issuer: Cisco
+    year: 2026
+    status: Completed
+
+  - name: CEH (Certified Ethical Hacker)
+    issuer: EC-Council
+    status: Preparing
+
+  - name: Security+
+    issuer: CompTIA
+    status: Preparing
+
+skills:
+  siem_monitoring:
+    label: SIEM & Monitoring
+    tools:
+      - Wazuh
+      - Splunk Enterprise
+      - Microsoft Sentinel
+    activities:
+      - Alert monitoring
+      - Triage
+      - Escalation
+
+  incident_management:
+    label: Incident Management
+    tools:
+      - Catalyst Ticketing System
+    activities:
+      - Runbook-based triage
+      - Severity classification
+      - Escalation to L2/L3
+      - SLA-aware documentation
+      - ITIL/ITSM-aligned workflows
+
+  log_analysis:
+    label: Log Analysis
+    sources:
+      - Windows Event Logs
+      - Linux system logs
+      - Firewall & endpoint logs
+      - Cloud platform logs
+    activities:
+      - Suspicious pattern detection
+      - Endpoint investigation
+      - Network log analysis
+
+  threat_intelligence:
+    label: Threat Intelligence
+    activities:
+      - IOC identification (malicious IPs/URLs)
+      - MITRE ATT&CK TTP mapping
+      - Phishing analysis
+      - Malware analysis
+      - Ransomware analysis
+    tools:
+      - VirusTotal
+      - AbuseIPDB
+
+  network_security:
+    label: Network Security
+    protocols:
+      - TCP/IP
+      - DNS
+      - HTTP/HTTPS
+      - VPN
+    activities:
+      - Firewall log analysis
+      - Cyber Kill Chain mapping
+
+  web_security:
+    label: Web Security
+    tools:
+      - Burp Suite
+    frameworks:
+      - OWASP Top 10
+    activities:
+      - VAPT
+      - SQL Injection Testing
+      - Parameter tampering
+      - Payload injection
+
+  programming_os:
+    label: Programming & OS
+    languages:
+      - Python
+    activities:
+      - Log parsing
+      - Security scripting
+      - Automation
+    operating_systems:
+      - Windows
+      - Linux
+
+  frameworks:
+    label: Frameworks & Compliance
+    items:
+      - MITRE ATT&CK
+      - Cyber Kill Chain
+      - ITIL/ITSM
+      - OWASP Top 10
+      - CVSS risk ratings
+
+experience:
+  - role: Security Operations Analyst Intern — Tier 1
+    company: Secure Sleuth
+    location: Mumbai (Remote)
+    period:
+      start: 2025-08
+      end: 2025-10
+    type: Internship
+    responsibilities:
+      - >
+        Monitored Wazuh SIEM for real-time security alerts; classified incidents
+        by severity, distinguished true positives from false positives, and
+        escalated confirmed threats to L2 analysts per defined runbooks and SLAs.
+      - >
+        Reviewed Windows Event Logs and Linux system logs from servers, endpoints,
+        and network devices to detect brute-force attempts, suspicious
+        authentication patterns, lateral movement, phishing, and malware
+        execution indicators.
+      - >
+        Maintained detailed incident logs, investigation timelines, and mitigation
+        steps in the Catalyst ticketing system (ITIL-aligned); authored and
+        followed SOPs and escalation playbooks consistently.
+      - >
+        Identified malicious IPs and URLs (IOCs); applied blocks and coordinated
+        SIEM rule tuning to reduce false positives and improve alert accuracy —
+        contributing to vulnerability remediation closure.
+      - >
+        Enriched alert context via threat intelligence lookups (VirusTotal,
+        AbuseIPDB); analyzed phishing email headers; contributed to daily security
+        event reports aligned with SOC SLA targets.
+      - >
+        Supported structured shift handovers and collaborated with senior analysts
+        for cross-functional incident resolution in a 24/7 operational environment.
+
+projects:
+  - id: PRJ_001
+    title: VAPT Report — Private Administration
+    category: Web Security
+    tools:
+      - Burp Suite
+      - Manual Testing
+    frameworks:
+      - OWASP Top 10
+      - CVSS
+    description: >
+      Conducted a full-scope black-box penetration test on a private web
+      application, identifying critical and high-severity vulnerabilities
+      including SQL Injection and security misconfigurations.
+    highlights:
+      - Mapped all findings to OWASP Top 10 and CVSS risk ratings
+      - Documented complete attack chains with proof-of-concept steps
+      - Delivered actionable remediation recommendations in a professional VAPT report
+      - Utilized Burp Suite for intercepting HTTP requests, parameter tampering,
+        and payload injection to validate exploitability
+
+  - id: PRJ_002
+    title: SSH Log Analyser
+    category: Log Analysis / Threat Detection
+    tools:
+      - Python
+    platform: Linux
+    description: >
+      Python-based tool to parse and analyze SSH authentication logs, detecting
+      brute-force patterns, failed login attempts, and suspicious source IPs
+      with automated alerting capability.
+    highlights:
+      - Detects brute-force authentication attempts
+      - Identifies suspicious source IPs
+      - Automated alerting on anomalous patterns
+
+  - id: PRJ_003
+    title: Centralised SIEM & SOC Lab
+    category: SIEM / SOC Operations
+    tools:
+      - Splunk Enterprise
+      - Python
+      - Wazuh
+    platforms:
+      - TryHackMe
+      - BTLO
+      - defenders.io
+    description: >
+      Designed and deployed a centralised SIEM lab integrating Wazuh and Splunk
+      Universal Forwarder for log aggregation, alert correlation, and incident
+      triage — simulating a real-world SOC workflow.
+    highlights:
+      - Deployed Splunk Universal Forwarder for Windows and Linux telemetry ingestion
+      - Configured correlation rules and detection logic to reduce false positives
+      - Executed brute-force, phishing, malware, and ransomware simulation scenarios
+      - Mapped attacker TTPs to MITRE ATT&CK framework
+      - Practiced full triage, escalation, and documentation workflows
+      - Developed Python scripts for log parsing and automation
+
+education:
+  - degree: PG Diploma in Cyber Security
+    institution: Digital University, Kerala
+    status: Pursuing
+
+  - degree: Bachelor of Computer Applications (BCA)
+    institution: MG University, Kerala
+    period:
+      start: 2022-09
+      end: 2025-05
+    status: Completed
+
+continuous_learning:
+  platforms:
+    - TryHackMe
+    - BTLO
+    - defenders.io
+  activities:
+    - CTF competitions
+    - Lab exercises
+    - Hands-on security challenges
+
+languages:
+  - language: English
+    proficiency: Fluent
+  - language: Malayalam
+    proficiency: Native
+
+portfolio:
+  theme: CrossCipher
+  accent_color: "#00d2ff"
+  secondary_color: "#a855f7"
+  background: "#0a0e14"
+  resume_url: sijin-cv.html
+  github_url: https://github.com/sijinksajeesh-cmyk
+  linkedin_url: https://www.linkedin.com/in/sijin-k-sajeesh-/
