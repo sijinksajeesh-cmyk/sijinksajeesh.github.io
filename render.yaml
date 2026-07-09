@@ -1,30 +1,49 @@
 # ============================================================
-# Render Blueprint — sijin-portfolio
-# https://render.com/docs/blueprint-spec
+# Render Blueprint — Sijin K Sajeesh Portfolio
+# Deploy: push to GitHub → Render → New Blueprint
 # ============================================================
+
+previews:
+  generation: automatic
 
 services:
   - type: web
     name: sijin-portfolio
     runtime: static
+    repo: https://github.com/sijinksajeesh-cmyk/sijin-portfolio
+    branch: main
     buildCommand: ""
     staticPublishPath: .
-    pullRequestPreviewsEnabled: false
-
-    envVars: []
 
     headers:
       - path: /*
         name: X-Frame-Options
-        value: DENY
+        value: SAMEORIGIN
       - path: /*
         name: X-Content-Type-Options
         value: nosniff
       - path: /*
-        name: Cache-Control
-        value: public, max-age=3600
+        name: Referrer-Policy
+        value: strict-origin-when-cross-origin
+      - path: /*
+        name: Permissions-Policy
+        value: geolocation=(), microphone=(), camera=()
 
     routes:
       - type: rewrite
+        source: /cv
+        destination: /sijin-cv.html
+      - type: rewrite
+        source: /resume
+        destination: /sijin-cv.html
+      - type: rewrite
         source: /*
         destination: /sijin-portfolio.html
+
+    envVars:
+      - key: OWNER
+        value: Sijin K Sajeesh
+      - key: ROLE
+        value: Security Operations Analyst
+      - key: EMAIL
+        value: sijinksajeesh.online@gmail.com
