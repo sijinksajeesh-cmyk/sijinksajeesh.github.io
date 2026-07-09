@@ -1,6 +1,3 @@
-previews:
-  generation: automatic
-
 services:
   - type: web
     name: sijin-portfolio
@@ -9,7 +6,6 @@ services:
     branch: main
     buildCommand: ""
     staticPublishPath: .
-
     headers:
       - path: /*
         name: X-Frame-Options
@@ -20,7 +16,6 @@ services:
       - path: /*
         name: Referrer-Policy
         value: strict-origin-when-cross-origin
-
     routes:
       - type: rewrite
         source: /resume
